@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PELICULIX</title>
+    <link rel="stylesheet" href="/css/Style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="#peliculas">Películas</a></li>
+                <li><a href="Series.html">Series</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <h1>Series</h1>
+        <p>Las mejores Series de nuestra plataforma</p>
+    </section>
+    
+    <section id="pelicula">
+        <h2>Series mas vistas este año </h2>
+        <div class="pelicula">
+            <img src="pelicula1.jpg" alt="Película 1" onclick="playVideo('video1.mp4')">
+            <p>serie 1</p>
+        </div>
+        <div class="pelicula">
+            <img src="pelicula2.jpg" alt="Película 2" onclick="playVideo('video2.mp4')">
+            <p>serie 2</p>
+        </div>
+        <!-- Agrega más películas aquí -->
+    </section>
+    
+    <section id="pelicula ">
+        <h2>Para ver con la familia </h2>
+        <div class="series">
+            <img src="serie1.jpg" alt="Serie 1" onclick="playVideo('video3.mp4')">
+            <p>serie 3</p>
+        </div>
+        <div class="series">
+            <img src="serie2.jpg" alt="Serie 2" onclick="playVideo('video4.mp4')">
+            <p>serie 4</p>
+        </div>
+        <!-- Agrega más series aquí -->
+    </section>
+
+    <footer>
+        <p>&copy; PELICULIX</p>
+    </footer>
+
+    <script>
+        function playVideo(videoSrc) {
+            // Puedes implementar la lógica para mostrar el video aquí
+            alert("Reproduciendo video: " + videoSrc);
+        }
+    </script>
+</body>
+</html>
