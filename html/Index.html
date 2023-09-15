@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PELICULIX</title>
+    <link rel="stylesheet" href="/css/Style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="Peliculas.html">Películas</a></li>
+                <li><a href="Series.html">Series</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <h1>Bienvenido a PELICULIX</h1>
+        <p>La mejor plataforma de streaming en azul.</p>
+    </section>
+    
+    <section id="peliculas">
+        <h2>Lo mas visto de la semana </h2>
+        <div class="movie">
+            <img src="pelicula1.jpg" alt="Película 1" onclick="playVideo('video1.mp4')">
+            <p>Película 1</p>
+        </div>
+        <div class="movie">
+            <img src="pelicula2.jpg" alt="Película 2" onclick="playVideo('video2.mp4')">
+            <p>Película 2</p>
+        </div>
+        <!-- Agrega más películas aquí -->
+    </section>
+    
+    <section id="series">
+        <h2>Lo mas aclamado por la critica </h2>
+        <div class="series">
+            <img src="serie1.jpg" alt="Serie 1" onclick="playVideo('video3.mp4')">
+            <p>Serie 1</p>
+        </div>
+        <div class="series">
+            <img src="serie2.jpg" alt="Serie 2" onclick="playVideo('video4.mp4')">
+            <p>Serie 2</p>
+        </div>
+        <!-- Agrega más series aquí -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 PELICULIX</p>
+    </footer>
+
+    <script>
+        function playVideo(videoSrc) {
+            // Puedes implementar la lógica para mostrar el video aquí
+            alert("Reproduciendo video: " + videoSrc);
+        }
+    </script>
+</body>
+</html>
