@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <title>PELICULIX</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">PELICULIX</h2>
+            <nav>
+                <a href="index.html" class="activo">Inicio</a>
+                <a href="Peliculas.html"class="activo">Películas</a>
+                <a href="Series.html"class="activo">Series</a>
+                <div class="categorias">
+                    <select id="categorias" onchange="redireccionar()">
+                        <option value="" disabled selected>Selecciona una categoría</option>
+                        <option value="Accion.html">Acción</option>
+                        <option value="Terror.html">Terror</option>
+                        <option value="Comedia.html">Comedia</option>
+                        <option value="Ciencia_ficcion.html">Ciencia Ficción</option>
+                        <option value="Drama.html">Drama</option>
+                        <!-- Agrega más opciones de categorías según tus necesidades y asegúrate de que los archivos .html existan en tu proyecto -->
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function redireccionar() {
+            var seleccion = document.getElementById("categorias").value;
+            if (seleccion) {
+                window.location.href = seleccion; // Redirige a la página de categoría seleccionada
+            }
+        }
+    </script>
+
+
+<main>
+    <div class="pelicula-principal">
+        <div class="contenedor">
+            <h3 class="titulo">SEX EDUCATION</h3>
+            <p class="descripcion">
+                Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.
+            </p>
+            <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+            <button role="button" class="boton"><i class="fas fa-info-circle"></i>Más información</button>
+        </div>
+    </div>
+
+    <div class="peliculas-recomendadas contenedor">
+        <div class="contenedor-titulo-controles">
+            <h3>Películas Recomendadas</h3>
+            <div class="indicadores"></div>
+        </div>
+
+        <div class="contenedor-principal">
+            <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+            <div class="contenedor-carousel">
+                <div class="carousel">
+                    <div class="pelicula">
+                        <a href="https://www.youtube.com/watch?v=Td90WXh2SM0&ab_channel=NetflixLatinoam%C3%A9rica"><img src="img/tentencia1.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/tendencia2.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/tendencia3.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/tendencia4.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/tendencia5.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/tendencia6.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/tendencia7.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/tendencia8.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/tendencia9.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/tendencia10.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+        </div>
+    </div>
+    <div class="peliculas-recomendadas contenedor">
+        <div class="contenedor-titulo-controles">
+            <h3>Peliculas mas vistas</h3>
+            <div class="indicadores"></div>
+        </div>
+
+        <div class="contenedor-principal">
+            <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+            <div class="contenedor-carousel">
+                <div class="carousel">
+                    <div class="pelicula">
+                        <a href="#"><img src="img/serie1.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/serie2.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/serie3.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/serie4.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/serie5.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/serie6.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/serie7.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/serie8.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/serie9.png" alt=""></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="#"><img src="img/serie10.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+        </div>
+    </div>
+</main>
+
+
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+    <!-- Resto de tu contenido HTML -->
+</body>
+</html>
+
